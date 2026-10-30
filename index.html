@@ -48,6 +48,26 @@
         padding: 5rem 1.5rem 4rem;
       }
 
+      /* ---- menu -------------------------------------------------------------- */
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.25rem;
+        margin-bottom: 1.5rem;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.8rem;
+      }
+
+      .menu a {
+        color: var(--dim);
+        border-bottom-color: transparent;
+      }
+
+      .menu a:hover {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+
       /* ---- header ---------------------------------------------------------- */
       .top {
         display: flex;
@@ -276,10 +296,14 @@
   </head>
   <body>
     <main class="page">
+      <nav class="menu">
+        <a href="side-quests.html">Side Quests</a>
+      </nav>
+
       <header class="top">
         <img
           class="avatar"
-          src="avatar.jpg"
+          src="assets/avatar.jpg"
           alt="Shawn Wei Chew"
           onerror="
             this.style.display = 'none';
@@ -327,7 +351,11 @@
           <span class="when">2026 &mdash;</span>
           <span class="what"
             >UCCL Project
-            <small>Fused multi-GPU kernels</small>
+            <small
+              ><a href="https://arxiv.org/pdf/2609.13585"
+                >Fused multi-GPU kernels</a
+              ></small
+            >
           </span>
         </li>
         <li>
@@ -349,6 +377,7 @@
       <footer>
         <a href="https://github.com/ShawnWeiChew">GitHub</a>
         <a href="mailto:shawnweic@gmail.com">Email</a>
+        <a href="https://x.com/sw_5405">X</a>
       </footer>
     </main>
   </body>
